@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct employee {
+    int id;
+    char name[10];
+    float salary;
+} employee_t;
+
+int main() {
+    employee_t my_emp;
+    printf("%d\n", (int)sizeof(employee_t));
+    return 0;
+}
