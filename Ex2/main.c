@@ -20,6 +20,7 @@ int emp_aveage_age(employee_t emp[], int n) {
     return n > 0 ? total_age / n : 0;
 }
 
+
 void emp_writefile(employee_t emp[], int n) {
     FILE *fp = fopen("employee.bin", "wb");
     if (!fp) {
@@ -48,8 +49,8 @@ int main() {
         {"Alice", 30, 50000.0},
         {"Bob", 25, 45000.0},
         {"Charlie", 28, 48000.0}
-    }
-    
+    };
+
     printf("Original employee data:\n");
     for (int i = 0; i < n; i++) {
         emp_info(employees[i]);
