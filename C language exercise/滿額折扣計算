@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int number, total, original;
+    printf("Please enter the number of customers:\n");
+    scanf("%d", &number);
+    original = 300*number;
+    if (original >= 3000) {
+        total = original * 0.8;
+    }
+    if (original < 3000) {
+        total = original;
+    }
+    printf("total:%d\n", total);
+        return 0;
+}
