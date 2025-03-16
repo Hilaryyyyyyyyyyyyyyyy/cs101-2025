@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main () {
+    int guess, answer = 4;
+    printf("Please enter your guess: ");
+    scanf("%d", &guess);
+    if (guess == 4) {
+        printf("Bingo!\n");
+    }
+    if(guess > 4) {
+        printf("Too large.\n");
+    }
+    if(guess < 4) {
+        printf("Too small.\n");
+    }
+    return 0;
+}
