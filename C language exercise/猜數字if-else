@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main () {
+    int a = 5, b;
+    printf("Please enter an integer: ");
+    scanf("%d", &b);
+    if (a > b) {
+        printf("Too small.\n");
+    } else if (a < b) {
+        printf("Too large.\n");
+    } else {
+        printf("Bingo!\n");
+    }
+    return 0;
+}
