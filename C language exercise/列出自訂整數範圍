@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int M;
+    int N;
+    printf("Please enter the number M:");
+    scanf("%d", &M);
+    printf("Please emter the number N:");
+    scanf("%d", &N);
+    while(M <= N) {
+        printf("%d\n", M);
+        M = M + 1;
+    }
+    return 0;
+}
