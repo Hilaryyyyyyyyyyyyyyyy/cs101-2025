@@ -1,0 +1,16 @@
+#include <stdio.h>
+    int main() {
+    int answer = 4, count = 0, guess;
+    while (count == 0 || guess != answer) {
+        printf("Please enter your guess: ");
+        scanf("%d", &guess);
+        count = count + 1;
+        if (guess > answer) {
+            printf("Too large.\n");
+        } else if (guess < answer) {
+            printf("Too small.\n");
+        }
+    }
+    printf("Bingo!\n");
+    return 0;
+}
