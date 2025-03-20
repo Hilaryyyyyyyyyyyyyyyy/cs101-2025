@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int M, N;
+    printf("Please enter the number M:");
+    scanf("%d", &M);
+    printf("Please enter the number N:");
+    scanf("%d", &N);
+    for(M = M; M <= N; M = M + 1) {
+        printf("%d\n", M);
+    }
+    return 0;
+}
