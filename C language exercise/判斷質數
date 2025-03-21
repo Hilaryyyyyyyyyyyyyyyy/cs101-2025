@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    printf("Please enter a number: ");
+    scanf("%d", &N);
+    
+    int number = 2;
+    while(number < N && N % number != 0) {
+        ++number;
+    }
+    if(number == N) {
+        printf("Yes.\n");
+    } else {
+        printf("No.\n");
+    }
+    
+    return 0;
+}
