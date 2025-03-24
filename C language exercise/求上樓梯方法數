@@ -1,0 +1,17 @@
+#include <stdio.h>
+int s(int N);
+
+int main() {
+    int N;
+    printf("N = ");
+    scanf("%d", &N);
+    printf("%d\n", s(N));
+    return 0;
+}
+
+int s(int N) {
+    if(N <= 2) {
+        return N;
+    }
+    return s(N-1) + s(N-2);
+}
