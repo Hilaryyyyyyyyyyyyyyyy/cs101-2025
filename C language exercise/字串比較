@@ -1,0 +1,18 @@
+#include <stdio.h>
+int str_compare(char a[], char b[]) {
+    int eq = 1;
+    for(int i = 0, j = 0; a[i]; i++, j++) {
+        if(a[i] != b[j]) {
+            eq = 0;
+            break;
+        }
+    }
+    return eq;
+}
+int main() {
+    char a[] = "hellO";
+    char b[] = "hello";
+    int eq = 0;
+    eq = str_compare(a, b);
+    (eq) ? printf("%s == %s", a, b): printf("%s != %s", a, b);
+}
