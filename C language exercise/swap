@@ -1,0 +1,14 @@
+#include <stdio.h>
+void swap(char a, char b) {
+    char tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+}
+int main() {
+    char a = 'a';
+    char b = 'b';
+    swap(a, b);
+    printf("a = %c, b = %c\n", a, b);
+    return 0;
+}
