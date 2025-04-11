@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+#define square(x) ((x)*(x))
+#define max_value(x, y) ((x) > (y) ? (x) : (y))
+
+int main() {
+    printf("Max between 20 and 10 is %d\n", max_value(10, 20));
+    printf("square(10) = %d\n", square(10));
+    return 0;
+}
