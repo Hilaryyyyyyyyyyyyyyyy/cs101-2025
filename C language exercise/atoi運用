@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+  char str[] = "1234567890";
+  int n = atoi(str);
+  printf("the value of string is %d\n", n);
+  return 0;
+}
