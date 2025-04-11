@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    char a[3][7] = {
+        {'1', 'X', '2', 'X','2', '1', '1'},
+        {'X', '1', '1', '2','2', '1', '1'},
+        {'1', 'X', '2', 'X','2', '1', '1'},
+    };
+    int total = sizeof(a);
+    int column = sizeof(a[0]);
+    int row = total/column;
+    printf("a[%d][%d]\n", row, column);
+    return 0;
+}
