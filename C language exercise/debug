@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+#define _DEBUG
+#define debugmsg(a) \
+    printf("[%s %s]%s:%d %s\n", __TIME__,\
+                                __DATE__,\
+                                __FILE__,\
+                                __LINE__,\
+                                (a));
+int main() {
+    #ifdef _DEBUG
+        debugmsg("Shxx happen!");
+    #endif
+    printf("1234\n");
+    return 0;
+}
