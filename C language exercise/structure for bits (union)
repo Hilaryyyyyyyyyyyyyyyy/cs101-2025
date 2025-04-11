@@ -1,0 +1,26 @@
+#include <stdio.h>
+typedef struct bits {
+    unsigned bit0:1;
+    unsigned bit1:1;
+    unsigned bit2:1;
+    unsigned bit3:1;
+    unsigned bit4:1;
+    unsigned bit5:1;
+    unsigned bit6:1;
+    unsigned bit7:1;
+} bits_t;
+typedef union {
+    int myint;
+    bits_t bis;
+} Byte_u;
+
+int main() {
+    Byte_u abyte;
+    abyte.myint = 9;
+    printf("abyte = %d\n", abyte.myint);
+    printf("abyte bits = %d %d %d %d\n", abyte.bis.bit3,
+                                        abyte.bis.bit2,
+                                        abyte.bis.bit1,
+                                        abyte.bis.bit0);
+    return 0;
+}
