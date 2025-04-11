@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+typedef struct bits {
+    unsigned bit0:1;
+    unsigned bit1:1;
+    unsigned bit2:1;
+    unsigned bit3:1;
+    unsigned bit4:1;
+    unsigned bit5:1;
+    unsigned bit6:1;
+    unsigned bit7:1;
+} bits_t;
+
+int main() {
+    bits_t abyte;
+    abyte.bit0 = 1, abyte.bit1 = 0, abyte.bit2 = 0, abyte.bit3 = 1,
+    abyte.bit4 = 1, abyte.bit5 = 1, abyte.bit6 = 1, abyte.bit7 = 0,
+    
+    printf("abyte.bit0 = %d \n", abyte.bit0);
+    printf("abyte.bit1 = %d \n", abyte.bit1);
+    printf("abyte.bit2 = %d \n", abyte.bit2);
+    printf("abyte.bit3 = %d \n", abyte.bit3);
+    return 0;
+}
