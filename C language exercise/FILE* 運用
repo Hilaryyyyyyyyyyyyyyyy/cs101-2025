@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    FILE* fp;
+    fp = fopen("cj.txt", "w+");
+    fprintf(fp, "This is a openfile example.\n");
+    fclose(fp);
+    return 0;
+}
