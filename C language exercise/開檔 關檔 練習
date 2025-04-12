@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    FILE *fp = fopen("input.txt", "r");
+    FILE *fpp = fopen("output.txt", "w");
+
+    if (fp == NULL || fpp == NULL) {
+        printf("檔案開啟失敗！\n");
+        return 1;
+    }
+
+    char buffer[256];
+    size_t bytesRead;
+
+    // 讀取並寫入
+    while ((bytesRead = fread(buffer, sizeof(char), sizeof(buffer), fp)) > 0) {
+        fwrite(buffer, sizeof(char), bytesRead, fpp);
+    }
+
+    fclose(fp);
+    fclose(fpp);
+
+    return 0;
+}
